@@ -1,0 +1,152 @@
+*{
+    font-family: helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background-color: #ECEFF1;
+    transition: .3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.bi-moon{
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ECEFF1;
+    box-shadow: .5px .5px 10px .5px black;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin-top: 4rem;
+    display: flex;
+    width: 60%;
+    position: relative;
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,.3);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-image{
+    padding: 2rem;
+    width: 50%;
+    position: relative;
+    background-color: #eff7fc;
+}
+
+.card-image span{
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.card img{
+    width: 115%;
+    position: absolute;
+    right: -1rem;
+    top: 5rem;
+}
+
+.card-details {
+    width: 50%;
+    padding: 2rem;
+}
+
+.card-details h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description{
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.btn{
+    background-color: #444;
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    border-radius: 3rem;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/*dark theme*/
+
+.dark, .dark header {
+    background-color: #263238;
+    color: white;
+}
+
+.dark .bi-sun{
+    display: none;
+}
+
+.dark .bi-moon{
+    display: block;
+}
+
+.dark .card{
+    background-color: #37474f;
+}
+
+.dark .card-image{
+    background-color: #273035;
+}
+
+.dark .subtitle{
+    color: white;
+}
+
+.dark .description{
+    color: white;
+}
+
+.dark .btn{
+    background-color: #67b4f3;
+}
+
+.dark .price{
+    color: #2196F3;
+}
